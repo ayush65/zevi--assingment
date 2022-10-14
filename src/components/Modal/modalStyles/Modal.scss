@@ -1,0 +1,32 @@
+/** @format */
+.closeModal {
+  position: absolute;
+  top: 22%;
+  z-index: 5;
+  right: 33%;
+  color: grey;
+  font-size: 1.5rem;
+}
+.modal-container {
+  position: absolute;
+  top: 30%;
+  z-index: 5;
+  background-color: white;
+  width: 70%;
+  right: 20%;
+}
+.search-img {
+  width: 150px;
+  height: 200px;
+  padding: 5px;
+}
+.search-list-container {
+  display: flex;
+  padding: 10px;
+}
+.modal-cotent-container {
+  position: absolute;
+  background-color: white;
+  right: 25%;
+  top: 30%;
+}
