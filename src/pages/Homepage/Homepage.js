@@ -21,7 +21,7 @@ const Homepage = () => {
     <div>
       <img
         src='https://uploads-ssl.webflow.com/622778f0460ef2a7b46117c1/62277b0ea97763788d756b0b_ZEVI-GG-LogoDesogn%20-Option-2-Black-p-500.png'
-        alt=''
+        alt='img'
         className='logo-img'
       />
       <div className='search-container' onClick={() => clickHandler()}>
@@ -43,7 +43,7 @@ const Homepage = () => {
 
       <img
         src='https://images.unsplash.com/photo-1490481651871-ab68de25d43d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGhhbmdpbmclMjBjbG90aGVzfGVufDB8fDB8fA%3D%3D&w=1000&q=80'
-        alt=''
+        alt='img'
         className='homepage-img'
       />
 

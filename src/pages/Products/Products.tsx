@@ -9,12 +9,13 @@ import { AiFillHeart, AiOutlineHeart, AiFillStar } from "react-icons/ai";
 const Products = () => {
   const { productState, productDispatch } = useProduct();
   const [buttonText, setButtonText] = useState(<AiOutlineHeart />);
+  const [isShown, setIsShown] = useState(false);
 
   return (
     <div>
       <img
         src='https://uploads-ssl.webflow.com/622778f0460ef2a7b46117c1/62277b0ea97763788d756b0b_ZEVI-GG-LogoDesogn%20-Option-2-Black-p-500.png'
-        alt=''
+        alt='img'
         className='logo-img'
       />
       <div className=' product-search'>
@@ -34,7 +35,11 @@ const Products = () => {
       <div className='card-container'>
         {productState.data.map((item: any) => {
           return (
-            <div key={item.id} className='card'>
+            <div
+              key={item.id}
+              className='card'
+              onMouseEnter={() => setIsShown(true)}
+              onMouseLeave={() => setIsShown(false)}>
               <button
                 type='submit'
                 className='heart-button'
@@ -47,8 +52,10 @@ const Products = () => {
                 }}>
                 {buttonText}
               </button>
-              <img src={item.image} alt='' className='card-image' />
-              <button className='product-button'>View Product</button>
+              <img src={item.image} alt='item-img' className='card-image' />
+              {isShown && (
+                <button className='product-button'>View Product</button>
+              )}
 
               <p>{item.name}</p>
               <p className='product-content'> Rs {item.price}</p>
