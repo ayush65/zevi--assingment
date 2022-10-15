@@ -1,6 +1,6 @@
 /** @format */
 .sidebar-container {
-  box-shadow: 1px solid grey;
+  box-shadow: 1px solid;
   width: 700px;
   height: 100rem;
   position: absolute;

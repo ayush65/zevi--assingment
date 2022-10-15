@@ -1,7 +1,7 @@
 /** @format */
 
 .sidebar-container {
-  box-shadow: 1px solid grey;
+  box-shadow: 1px solid $grey;
   width: 700px;
   height: 100rem;
   position: absolute;
@@ -17,9 +17,7 @@
 }
 @media screen and (max-width: 492px) {
   .sidebar-container {
-    box-shadow: 1px solid grey;
     width: 30%;
-    position: absolute;
     top: 13%;
     padding: 1rem;
     font-size: 0.5rem;

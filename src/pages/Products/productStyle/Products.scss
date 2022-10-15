@@ -27,7 +27,7 @@
   border: none;
   position: absolute;
   left: 30%;
-  border: 1px solid grey;
+  border: 1px solid $grey;
 }
 .heart-button {
   position: absolute;
@@ -42,8 +42,8 @@
   position: absolute;
   width: 23%;
   margin-top: 17rem;
-  background-color: #6f00ff;
-  color: white;
+  background-color: $shadeblue;
+  color: $white;
   border: none;
 }
 .product-content {
@@ -69,8 +69,6 @@
     position: absolute;
     width: 150px;
     margin-top: 11rem;
-    background-color: #6f00ff;
-    color: white;
     border: none;
   }
   .input-handler {
