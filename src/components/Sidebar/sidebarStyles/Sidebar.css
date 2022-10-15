@@ -14,4 +14,21 @@
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+}
+
+@media screen and (max-width: 492px) {
+  .sidebar-container {
+    box-shadow: 1px solid grey;
+    width: 30%;
+    position: absolute;
+    top: 13%;
+    padding: 1rem;
+    font-size: 0.5rem;
+    gap: 2rem;
+  }
+  .sidebar-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
 }/*# sourceMappingURL=Sidebar.css.map */

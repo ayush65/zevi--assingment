@@ -53,4 +53,34 @@
 
 .product-content {
   margin-top: -0.5rem;
+}
+
+@media screen and (max-width: 492px) {
+  .card-container {
+    position: absolute;
+    left: 45%;
+    top: 17%;
+    display: grid;
+    grid-template-columns: auto;
+  }
+  .card-image {
+    width: 150px;
+    height: 200px;
+  }
+  .heart-button {
+    margin-left: 7rem;
+  }
+  .product-button {
+    height: 2rem;
+    position: absolute;
+    width: 150px;
+    margin-top: 11rem;
+    background-color: #6f00ff;
+    color: white;
+    border: none;
+  }
+  .input-handler {
+    width: 100px;
+    height: 10px;
+  }
 }/*# sourceMappingURL=Products.css.map */

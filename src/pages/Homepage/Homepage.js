@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import "../Homepage/homepageStyles/Homepage.css";
 import { BsSearch } from "react-icons/bs";
 import Modal from "../../components/Modal/Modal";
-import { useQuiz } from "../../Context/Quiz-context";
+import { useProduct } from "../../Context/Product-context";
 import { Link } from "react-router-dom";
 
 const Homepage = () => {
@@ -15,7 +15,7 @@ const Homepage = () => {
     setIsOpen(true);
   };
 
-  const { productState, productDispatch } = useQuiz();
+  const { productState, productDispatch } = useProduct();
 
   return (
     <div>

@@ -1,12 +1,12 @@
 /** @format */
 
 import React from "react";
-import { useQuiz } from "../../Context/Quiz-context";
+import { useProduct } from "../../Context/Product-context";
 import "./sidebarStyles/Sidebar.css";
 import { AiFillStar, AiOutlineStar } from "react-icons/ai";
 
 const Sidebar = () => {
-  const { productState, productDispatch } = useQuiz();
+  const { productState, productDispatch } = useProduct();
 
   return (
     <div>

@@ -1,13 +1,13 @@
 /** @format */
 
 import React, { useState } from "react";
-import { useQuiz } from "../../Context/Quiz-context";
+import { useProduct } from "../../Context/Product-context";
 import "./productStyle/Products.css";
 import Sidebar from "../../components/Sidebar/Sidebar";
 import { AiFillHeart, AiOutlineHeart, AiFillStar } from "react-icons/ai";
 
 const Products = () => {
-  const { productState, productDispatch } = useQuiz();
+  const { productState, productDispatch } = useProduct();
   const [buttonText, setButtonText] = useState(<AiFillHeart />);
 
   return (

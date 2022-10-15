@@ -5,7 +5,7 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import { QuizProvider } from "./Context/Quiz-context";
+import { ProductProvider } from "./Context/Product-context";
 import { BrowserRouter } from "react-router-dom";
 
 const root = ReactDOM.createRoot(
@@ -13,11 +13,11 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <QuizProvider>
+    <ProductProvider>
       <BrowserRouter>
         <App />
       </BrowserRouter>
-    </QuizProvider>
+    </ProductProvider>
   </React.StrictMode>
 );
 

@@ -2,9 +2,9 @@
 
 import { createContext, useContext, useEffect, useReducer } from "react";
 import { faker } from "@faker-js/faker";
-import { productReducer, initialstate1 } from "../Reducer/quiz-reducer";
+import { productReducer, initialstate1 } from "../Reducer/product-reducer";
 
-type QuizContextProviderProps = {
+type ProductContextProviderProps = {
   children: React.ReactNode;
 };
 
@@ -22,14 +22,14 @@ type InitialProps1 = {
   searchQuery: any;
 };
 
-type QuizContextType1 = {
+type ProductContextType1 = {
   productState: InitialProps1;
   productDispatch: React.Dispatch<ActionProps>;
 };
 
-const QuizContext = createContext({} as QuizContextType1);
+const ProductContext = createContext({} as ProductContextType1);
 
-const QuizProvider = ({ children }: QuizContextProviderProps) => {
+const ProductProvider = ({ children }: ProductContextProviderProps) => {
   function getRandomInt(max: number) {
     return Math.floor(Math.random() * (max + 1));
   }
@@ -58,10 +58,10 @@ const QuizProvider = ({ children }: QuizContextProviderProps) => {
   );
 
   return (
-    <QuizContext.Provider value={{ productState, productDispatch }}>
+    <ProductContext.Provider value={{ productState, productDispatch }}>
       {children}
-    </QuizContext.Provider>
+    </ProductContext.Provider>
   );
 };
-const useQuiz = () => useContext(QuizContext);
-export { QuizProvider, useQuiz, QuizContext };
+const useProduct = () => useContext(ProductContext);
+export { ProductProvider, useProduct, ProductContext };

@@ -15,6 +15,7 @@
   background-color: white;
   width: 70%;
   right: 20%;
+  margin: 1rem;
 }
 
 .search-img {
@@ -31,6 +32,21 @@
 .modal-cotent-container {
   position: absolute;
   background-color: white;
-  right: 25%;
+  right: 22%;
   top: 30%;
+}
+
+.search-list-container-content {
+  margin: 0.5rem;
+}
+
+@media screen and (max-width: 492px) {
+  .search-list-container {
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+  }
+  .closeModal {
+    right: 40%;
+  }
 }/*# sourceMappingURL=Modal.css.map */
