@@ -8,7 +8,7 @@ import { AiFillHeart, AiOutlineHeart, AiFillStar } from "react-icons/ai";
 
 const Products = () => {
   const { productState, productDispatch } = useProduct();
-  const [buttonText, setButtonText] = useState(<AiFillHeart />);
+  const [buttonText, setButtonText] = useState(<AiOutlineHeart />);
 
   return (
     <div>
@@ -39,10 +39,10 @@ const Products = () => {
                 type='submit'
                 className='heart-button'
                 onClick={() => {
-                  setButtonText(<AiOutlineHeart />);
+                  setButtonText(<AiFillHeart className='heart-icon' />);
 
                   setTimeout(() => {
-                    setButtonText(<AiFillHeart />);
+                    setButtonText(<AiOutlineHeart />);
                   }, 2000);
                 }}>
                 {buttonText}
