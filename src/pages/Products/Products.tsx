@@ -39,11 +39,11 @@ const Products = () => {
                 type='submit'
                 className='heart-button'
                 onClick={() => {
-                  setButtonText(<AiFillHeart className='heart-icon' />);
+                  setButtonText(<AiFillHeart color='red' />);
 
                   setTimeout(() => {
                     setButtonText(<AiOutlineHeart />);
-                  }, 2000);
+                  }, 3000);
                 }}>
                 {buttonText}
               </button>
