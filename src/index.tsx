@@ -6,7 +6,6 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { QuizProvider } from "./Context/Quiz-context";
-import AllRoutes from "./AllRoutes/AllRoutes";
 import { BrowserRouter } from "react-router-dom";
 
 const root = ReactDOM.createRoot(

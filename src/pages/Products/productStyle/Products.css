@@ -1,1 +1,56 @@
-/** @format *//*# sourceMappingURL=Products.css.map */
+/** @format */
+.card-container {
+  position: absolute;
+  left: 30%;
+  top: 17%;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+.card-image {
+  width: 230px;
+  height: 300px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.input-handler {
+  width: 600px;
+  height: 20px;
+  border-radius: 10px;
+  top: 4%;
+  padding: 15px;
+  font-size: 1rem;
+  border: none;
+  position: absolute;
+  left: 30%;
+  border: 1px solid grey;
+}
+
+.heart-button {
+  position: absolute;
+  margin-left: 12rem;
+  background-color: transparent;
+  outline: none;
+  font-size: 1.5rem;
+  border: none;
+}
+
+.product-button {
+  height: 2rem;
+  position: absolute;
+  width: 23%;
+  margin-top: 17rem;
+  background-color: #6f00ff;
+  color: white;
+  border: none;
+}
+
+.product-content {
+  margin-top: -0.5rem;
+}/*# sourceMappingURL=Products.css.map */

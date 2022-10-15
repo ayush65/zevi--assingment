@@ -8,14 +8,6 @@ type QuizContextProviderProps = {
   children: React.ReactNode;
 };
 
-// type InitialProps = {
-//   count: number;
-//   total_friends: number;
-//   total_suits: number;
-//   value: number;
-//   allquestion: number;
-// };
-
 type ActionProps = {
   type: any;
   payload: any;
@@ -29,11 +21,6 @@ type InitialProps1 = {
   byRating: number;
   searchQuery: any;
 };
-
-// type QuizContextType = {
-//   statetotal: InitialProps;
-//   stateDispatch: React.Dispatch<ActionProps>;
-// };
 
 type QuizContextType1 = {
   productState: InitialProps1;
@@ -69,11 +56,6 @@ const QuizProvider = ({ children }: QuizContextProviderProps) => {
     productReducer,
     initialstate1
   );
-
-  //console.log(productState);
-
-  // const [statetotal, stateDispatch] = useReducer(reducerFunc, initialstate);
-  //  console.log(initialstate);
 
   return (
     <QuizContext.Provider value={{ productState, productDispatch }}>

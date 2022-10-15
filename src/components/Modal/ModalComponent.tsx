@@ -1,7 +1,5 @@
 /** @format */
 
-import React, { useState } from "react";
-import { useQuiz } from "../../Context/Quiz-context";
 import "./modalStyles/Modal.css";
 
 const ModalComponent = () => {
@@ -9,13 +7,6 @@ const ModalComponent = () => {
 
   return (
     <div>
-      {/* {productState.data.map((item: any) => {
-        return (
-          <div key={item.id} className='card'>
-            {item.name}
-          </div>
-        );
-      })} */}
       <div className='modal-cotent-container'>
         <div>
           <h3>Latest Trend</h3>

@@ -1,0 +1,17 @@
+/** @format */
+
+.sidebar-container {
+  box-shadow: 1px solid grey;
+  width: 700px;
+  height: 100rem;
+  position: absolute;
+  top: 10%;
+  padding: 3rem;
+  font-size: 1rem;
+  gap: 2rem;
+}
+.sidebar-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}

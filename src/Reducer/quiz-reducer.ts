@@ -126,6 +126,38 @@ export const productReducer = (state: any, action: ActionProps) => {
     case "CLEAR_FILTERS":
       return { byStock: false, byFastDelivery: false, byRating: 0 };
 
+    case "FETCH_PRICE":
+      // console.log(filterStateCopy);
+      console.log(action.payload.data[2].price);
+      filterStateCopy = {
+        ...filterStateCopy,
+
+        data: action.payload.data.filter((value: any, i: number) => {
+          if (action.payload.data[i].price < action.payload.price) {
+            return value;
+          } else {
+            return false;
+          }
+        }),
+      };
+      return { ...filterStateCopy };
+
+    case "FETCH_RATING":
+      console.log(filterStateCopy);
+      console.log(action.payload.data);
+      filterStateCopy = {
+        ...filterStateCopy,
+
+        data: action.payload.data.filter((value: any, i: number) => {
+          if (action.payload.data[i].ratings === action.payload.ratings) {
+            return value;
+          } else {
+            return false;
+          }
+        }),
+      };
+      return { ...filterStateCopy };
+
     case "FETCH_SEARCH_NAME":
       console.log(action.payload.data);
       console.log("hi" + action);
