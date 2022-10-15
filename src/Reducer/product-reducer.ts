@@ -31,18 +31,6 @@ export const productReducer = (state: any, action: ActionProps) => {
       // console.log(action.payload);
       // console.log(data);
       return { ...filterStateCopy, data };
-    case "SORT_BY_PRICE":
-      return { ...state, sort: action.payload };
-    case "FILTER_BY_STOCK":
-      return { ...state, byStock: !state.byStock };
-    case "FILTER_BY_DELIVERY":
-      return { ...state, byFastDelivery: !state.byFastDelivery };
-    case "FILTER_BY_RATING":
-      return { ...state, byRating: action.payload };
-    case "FILTER_BY_SEARCH":
-      return { ...state, searchQuery: action.payload };
-    case "CLEAR_FILTERS":
-      return { byStock: false, byFastDelivery: false, byRating: 0 };
 
     case "FETCH_PRICE":
       // console.log(filterStateCopy);
